@@ -113,16 +113,16 @@ $('document').ready(function() {
     }
   
     function updateExchangeRate() {
-      $.getJSON("https://api.coindesk.com/v1/bpi/currentprice/cad.json", function(data) {
-         exchangeRate = Number(data.bpi.CAD.rate_float);
+      $.getJSON("https://api.coindesk.com/v1/bpi/currentprice/mxn.json", function(data) {
+         exchangeRate = Number(data.bpi.MXN.rate_float);
          console.log(exchangeRate);
       });
       setTimeout(updateExchangeRate, 1000 * 100);
     }
   
     function startHere() {
-        $.getJSON("https://api.coindesk.com/v1/bpi/currentprice/cad.json", function(data) {
-           exchangeRate = Number(data.bpi.CAD.rate_float);
+        $.getJSON("https://api.coindesk.com/v1/bpi/currentprice/mxn.json", function(data) {
+           exchangeRate = Number(data.bpi.MXN.rate_float);
            console.log(exchangeRate);
            const urlParams = new URLSearchParams(window.location.search);
            if (urlParams.has('sats')) {
