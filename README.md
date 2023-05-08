@@ -1,3 +1,6 @@
 # sats-per-hour
 
-converts CAD to Sats
+🇲🇽
+[MXN -> Sats](https://sats-per-hour.vercel.app/)
+
+converts MXN Pesos to Sats
